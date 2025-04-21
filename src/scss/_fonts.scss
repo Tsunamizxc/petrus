@@ -1,0 +1,11 @@
+// все шрифты добавляются сюда
+// mixin: font-face берёт формат woff2
+// mixin: font-face-format последним значением нужно указать формат шрифта
+@include font-face("Rubik", "/Rubik-Regular", 400, normal);
+@include font-face-format("Rubik", "/Rubik-Regular", 400, normal, ttf);
+@include font-face("Rubik", "/Rubik-Medium", 500, normal);
+@include font-face-format("Rubik", "/Rubik-Medium", 500, normal, ttf);
+@include font-face("Rubik", "/Rubik-Bold", 700, normal);
+@include font-face-format("Rubik", "/Rubik-Bold", 700, normal, ttf);
+@include font-face("Rubik", "/Rubik-Light", 300, normal);
+@include font-face-format("Rubik", "/Rubik-Light", 300, normal, ttf);

@@ -1,0 +1,101 @@
+.header {
+    // .header__row
+    &__row {
+        padding: 40px 0px;
+        position: fixed;
+        z-index: 2;
+        width: 1440px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // .header__row_left
+        &_left {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+        // .header__row_logo
+        &_logo {}
+        // .header__row_contacts
+        &_contacts {
+            display: flex;
+            gap: 20px;
+        }
+        // .header__row_right
+        &_right {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        // .header__row_menu
+        &_menu {}
+        // .header__row_btn
+        &_btn {}
+    }
+    // .header__logo
+    &__logo {
+        // .header__logo_link
+        &_link {}
+        // .header__logo_img
+        &_img {}
+    }
+    // .header__contacts
+    &__contacts {
+        // .header__contacts_phone
+        &_phone {
+            color: rgb(0, 0, 0);
+            font-family: Rubik;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+        // .header__contacts_city
+        &_city {
+            color: rgb(25, 178, 255);
+            font-family: Rubik;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 17px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+    }
+    // .header__menu
+    &__menu {
+        display: flex;
+        width: 424px;
+        justify-content: space-between;
+        // .header__menu_item
+        &_item {}
+        // .header__menu_link
+        &_link {
+            color: rgb(0, 0, 0);
+            font-family: Rubik;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+    }
+    // .header__btn
+    &__btn {
+        // .header__btn_item
+        &_item {
+            display: inline-block;
+            padding: 12px 44px;
+            box-sizing: border-box;
+            border: 1px solid rgb(9, 124, 187);
+            border-radius: 20px;
+            color: rgb(0, 0, 0);
+            font-family: Rubik;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+    }
+}
