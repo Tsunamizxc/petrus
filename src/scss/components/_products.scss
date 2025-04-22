@@ -1,15 +1,15 @@
 .products {
     // .products__row
-    &__header{
-        &_title{
+    &__header {
+        &_title {
             margin-bottom: 60px;
             color: rgb(0, 0, 0);
-font-family: Rubik;
-font-size: 60px;
-font-weight: 500;
-line-height: 71px;
-letter-spacing: 0px;
-text-align: center;
+            font-family: Rubik;
+            font-size: 60px;
+            font-weight: 500;
+            line-height: 71px;
+            letter-spacing: 0px;
+            text-align: center;
         }
     }
     &__row {
@@ -62,63 +62,49 @@ text-align: center;
 }
 
 .success {
-
-		// .success__header
-
-		&__header {
-
-			// .success__header_title
-
-			&_title {
-                margin: 60px 0px;
-                color: rgb(0, 0, 0);
-font-family: Rubik;
-font-size: 48px;
-font-weight: 400;
-line-height: 57px;
-letter-spacing: 0px;
-text-align: center;
-			}
-		}
-
-		// .success__row
-
-		&__row {
-            margin: 0 auto;
-display: flex;
-justify-content: space-between;
-gap: 50px;
-flex-wrap: wrap;
-max-width: 709px ;
-			// .success__row_item
-
-			&_item {
-                display: flex;
-                align-items: center;
-                gap: 10px;
-			}
-		}
-
-		// .success__item
-
-		&__item {
-
-			// .success__item_img
-
-			&_img {
-			}
-
-			// .success__item_name
-
-			&_name {
-                max-width: 86px;
-                color: rgb(0, 0, 0);
-font-family: Rubik;
-font-size: 14px;
-font-weight: 400;
-line-height: 17px;
-letter-spacing: 0px;
-text-align: left;
-			}
-		}
+    // .success__header
+    &__header {
+        // .success__header_title
+        &_title {
+            margin: 60px 0px;
+            color: rgb(0, 0, 0);
+            font-family: Rubik;
+            font-size: 48px;
+            font-weight: 400;
+            line-height: 57px;
+            letter-spacing: 0px;
+            text-align: center;
+        }
     }
+    // .success__row
+    &__row {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        flex-wrap: wrap;
+        max-width: 709px;
+        // .success__row_item
+        &_item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+    // .success__item
+    &__item {
+        // .success__item_img
+        &_img {}
+        // .success__item_name
+        &_name {
+            max-width: 86px;
+            color: rgb(0, 0, 0);
+            font-family: Rubik;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+    }
+}

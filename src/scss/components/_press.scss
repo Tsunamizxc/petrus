@@ -1,0 +1,91 @@
+.press {
+    // header
+    &__header {
+        margin: 120px 0px 60px 0px;
+        &_title {
+            color: rgb(0, 0, 0);
+            font-family: Rubik;
+            font-size: 60px;
+            font-weight: 500;
+            line-height: 71px;
+            letter-spacing: 0px;
+            text-align: center;
+        }
+    }
+    // .press__row
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        // .press__row_item
+        &_item {
+            display: flex;
+            gap: 20px;
+            max-width: 685px;
+        }
+        // .press__row_content
+        &_content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 480px;
+        }
+    }
+    // .press__item
+    &__item {
+        // .press__item_img
+        &_img {}
+    }
+    // .press__img
+    &__img {
+        // .press__img_item
+        &_item {
+            width: 170px;
+        }
+    }
+    // .press__content
+    &__content {
+        // .press__content_icon
+        &_icon {
+            flex: auto;
+            color: rgba(0, 0, 0, 0.6);
+            font-family: Rubik;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 140%;
+            letter-spacing: 0px;
+            text-align: left;
+            padding: 7px 23px;
+            background: rgb(207, 206, 206);
+        }
+        // .press__content_name
+        &_name {
+            color: rgb(0, 0, 0);
+            font-family: Rubik;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 140%;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+        // .press__content_descripton
+        &_descripton {
+            color: rgba(0, 0, 0, 0.6);
+            font-family: Rubik;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 140%;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+        // .press__content_btn
+        &_btn {
+            color: rgb(9, 124, 187);
+            font-family: Rubik;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 140%;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+    }
+}
