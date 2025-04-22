@@ -280,7 +280,8 @@ const htmlInclude = () => {
 const watchFiles = () => {
   browserSync.init({
     server: {
-      baseDir: `${buildFolder}`
+      baseDir: `${buildFolder}`,
+      tunnel: 'null'
     }
   });
 
