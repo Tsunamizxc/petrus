@@ -1,7 +1,7 @@
 .press {
     position: relative;
-    padding: 120px 0px 190px 0px;
-    background: linear-gradient(0.00deg, rgba(25, 178, 255, 0.2) 18.17%,rgba(251, 253, 255, 0) 53.779%,rgba(255, 255, 255, 0) 100%);
+    padding: 30px 0px 250px 0px;
+    background: linear-gradient(0.00deg, rgba(25, 178, 255, 0.2) 18.17%, rgba(251, 253, 255, 0) 53.779%, rgba(255, 255, 255, 0) 100%);
     // header
     &__header {
         margin: 120px 0px 60px 0px;
@@ -93,7 +93,8 @@
         }
     }
 }
-.blue-bg{
+
+.blue-bg {
     position: absolute;
     left: 0;
     bottom: 0;
