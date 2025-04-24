@@ -46,7 +46,7 @@ img {
     margin: 0 auto;
     height: 100%;
     @media (max-width: 1024px) {
-        padding: 0 rem(16);
+         max-width: rem(800);
     }
 }
 

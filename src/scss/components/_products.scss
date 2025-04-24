@@ -2,60 +2,76 @@
     // .products__row
     &__header {
         &_title {
-            margin-bottom: 60px;
+            margin-bottom: rem(60);
             color: rgb(0, 0, 0);
             font-family: Rubik;
-            font-size: 60px;
+            font-size: rem(60);
             font-weight: 500;
-            line-height: 71px;
-            letter-spacing: 0px;
+            line-height: rem(71);
+            letter-spacing: rem(0);
             text-align: center;
+             @media (max-width: 1024px) {
+                font-size: rem(36);
+                  margin-bottom: rem(30);
+            }
         }
     }
     &__row {
         display: flex;
         justify-content: space-between;
+         @media (max-width: 1024px) {
+                flex-wrap: wrap;
+                //  justify-content: space-evenly;
+                //  gap: rem(60);
+            }
         // .products__row_item
         &_item {
-            max-width: 430px;
+            max-width:rem(430);
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 20px;
+            gap: rem(20);
+              @media (max-width: 1024px) {
+               max-width: rem(250);
+            }
+            
         }
     }
     // .products__item
     &__item {
         // .products__item_img
-        &_img {}
+        &_img { 
+            @media (max-width: 1024px) {
+                width: rem(150);
+            }
+        }
         // .products__item_name
         &_name {
             color: rgb(0, 0, 0);
             font-family: Rubik;
-            font-size: 24px;
+            font-size: rem(24);
             font-weight: 400;
-            line-height: 28px;
-            letter-spacing: 0px;
+            line-height: rem(28);
             text-align: center;
         }
         // .products__item_description
         &_description {
             color: rgb(117, 117, 117);
             font-family: Rubik;
-            font-size: 18px;
+            font-size: rem(18);
             font-weight: 400;
-            line-height: 21px;
-            letter-spacing: 0px;
+            line-height: rem(21);
+            letter-spacing: rem(0);
             text-align: center;
         }
         // .products__item_btn
         &_btn {
             color: rgb(9, 124, 187);
             font-family: Rubik;
-            font-size: 24px;
+            font-size: rem(24);
             font-weight: 400;
-            line-height: 28px;
-            letter-spacing: 0px;
+            line-height: rem(28);
+            letter-spacing: rem(0);
             text-align: left;
         }
     }
@@ -66,14 +82,19 @@
     &__header {
         // .success__header_title
         &_title {
-            margin: 60px 0px;
+            margin:rem(60) rem(0);
             color: rgb(0, 0, 0);
             font-family: Rubik;
-            font-size: 48px;
+            font-size: rem(48);
             font-weight: 400;
-            line-height: 57px;
-            letter-spacing: 0px;
+            line-height: rem(57);
+            letter-spacing: rem(0);
             text-align: center;
+            @media (max-width: 1024px) {
+                 margin:rem(30) rem(0);
+                font-size: rem(24);
+            }
+           
         }
     }
     // .success__row
@@ -81,29 +102,31 @@
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
-        gap: 50px;
+        gap: rem(50);
         flex-wrap: wrap;
-        max-width: 709px;
+        max-width: rem(709);
         // .success__row_item
         &_item {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: rem(10);
         }
     }
     // .success__item
     &__item {
         // .success__item_img
-        &_img {}
+        &_img {
+             width: rem(50)
+        }
         // .success__item_name
         &_name {
-            max-width: 86px;
+            max-width: rem(86);
             color: rgb(0, 0, 0);
             font-family: Rubik;
-            font-size: 14px;
+            font-size: rem(14);
             font-weight: 400;
-            line-height: 17px;
-            letter-spacing: 0px;
+            line-height:rem(17);
+            letter-spacing: rem(0);
             text-align: left;
         }
     }

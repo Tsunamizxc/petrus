@@ -20,6 +20,9 @@
 .mainslider-slide {
     background-repeat: no-repeat;
     background-size: cover;
+      @media (max-width: 1024px) {
+            background-position: 60%;
+        }
 }
 
 .swiper-bg {
@@ -36,6 +39,10 @@
     &__header {
         padding-top: rem(284);
         padding-bottom: rem(439);
+        @media (max-width: 1024px) {
+            padding-top: rem(200);
+            padding-bottom: rem(339);
+        }
         // .mainslider__header_title
         &_title {
             max-width: rem(831);
@@ -47,6 +54,9 @@
             letter-spacing: rem(0);
             text-align: left;
             margin-bottom: rem(20);
+            @media (max-width: 1024px) {
+                font-size: rem(36);
+            }
         }
         // .mainslider__header_description
         &_description {
@@ -58,6 +68,10 @@
             line-height: 140%;
             letter-spacing: rem(0);
             text-align: left;
+            @media (max-width: 1024px) {
+                 max-width: rem(600);
+                font-size: rem(20);
+            }
         }
     }
 }

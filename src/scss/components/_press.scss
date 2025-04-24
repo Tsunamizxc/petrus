@@ -1,18 +1,24 @@
 .press {
     position: relative;
-    padding: 30px 0px 250px 0px;
+    padding: rem(30) rem(0) rem(250) rem(0);
     background: linear-gradient(0.00deg, rgba(25, 178, 255, 0.2) 18.17%, rgba(251, 253, 255, 0) 53.779%, rgba(255, 255, 255, 0) 100%);
     // header
     &__header {
-        margin: 120px 0px 60px 0px;
+        margin: rem(120) rem(0) rem(60) rem(0);
+        @media (max-width: 1024px) {
+                margin: rem(60) rem(0) rem(30) rem(0);
+            }
         &_title {
             color: rgb(0, 0, 0);
             font-family: Rubik;
-            font-size: 60px;
+            font-size: rem(60);
             font-weight: 500;
-            line-height: 71px;
-            letter-spacing: 0px;
+            line-height: rem(71);
+            letter-spacing: rem(0);
             text-align: center;
+            @media (max-width: 1024px) {
+                  font-size: rem(36);
+            }
         }
     }
     // .press__row
@@ -22,15 +28,16 @@
         // .press__row_item
         &_item {
             display: flex;
-            gap: 20px;
-            max-width: 685px;
+            gap: rem(20);
+            max-width: rem(685);
+            
         }
         // .press__row_content
         &_content {
             display: flex;
             flex-direction: column;
-            gap: 20px;
-            max-width: 480px;
+            gap: rem(20);
+            max-width: rem(480);
         }
     }
     // .press__item
@@ -42,53 +49,53 @@
     &__img {
         // .press__img_item
         &_item {
-            width: 170px;
+            width: rem(170);
         }
     }
     // .press__content
     &__content {
         // .press__content_icon
         &_icon {
-            width: 115px;
+            width: rem(115);
             flex: auto;
             color: rgba(0, 0, 0, 0.6);
             font-family: Rubik;
-            font-size: 20px;
+            font-size: rem(20);
             font-weight: 400;
             line-height: 140%;
-            letter-spacing: 0px;
+            letter-spacing: rem(0);
             text-align: left;
-            padding: 7px 23px;
+            padding: rem(7) rem(23);
             background: rgb(207, 206, 206);
         }
         // .press__content_name
         &_name {
             color: rgb(0, 0, 0);
             font-family: Rubik;
-            font-size: 20px;
+            font-size: rem(20);
             font-weight: 500;
             line-height: 140%;
-            letter-spacing: 0px;
+            letter-spacing: rem(0);
             text-align: left;
         }
         // .press__content_descripton
         &_descripton {
             color: rgba(0, 0, 0, 0.6);
             font-family: Rubik;
-            font-size: 20px;
+            font-size: rem(20);
             font-weight: 400;
             line-height: 140%;
-            letter-spacing: 0px;
+            letter-spacing:rem(0);
             text-align: left;
         }
         // .press__content_btn
         &_btn {
             color: rgb(9, 124, 187);
             font-family: Rubik;
-            font-size: 20px;
+            font-size:rem(20);
             font-weight: 400;
             line-height: 140%;
-            letter-spacing: 0px;
+            letter-spacing: rem(0);
             text-align: left;
         }
     }

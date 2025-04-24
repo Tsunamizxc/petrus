@@ -27,11 +27,20 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+            @media (max-width: 1024px) {
+                flex-direction: column;
+                gap: 20px;
+                padding: rem(40) rem(0) rem(10);
+            }
         // .header__row_left
         &_left {
             display: flex;
             align-items: center;
             gap: rem(40);
+               @media (max-width: 1024px) {
+justify-content: space-between;
+width: 100%;
+            }
         }
         // .header__row_logo
         &_logo {}
@@ -45,6 +54,10 @@
             display: flex;
             align-items: center;
             gap: rem(50);
+              @media (max-width: 1024px) {
+                justify-content: space-between;
+                width: 100%;
+              }
         }
         // .header__row_menu
         &_menu {}
@@ -58,6 +71,9 @@
         // .header__logo_img
         &_img {
             width: rem(232);
+            @media (max-width: 1024px) {
+                width: rem(132);
+            }
         }
     }
     // .header__contacts
@@ -67,10 +83,14 @@
             color: rgb(0, 0, 0);
             font-family: Rubik;
             font-size: rem(18);
+               
             font-weight: 400;
             line-height: rem(17);
             letter-spacing: rem(0);
-            text-align: left;
+            text-align: left;     
+            @media (max-width: 1024px) {
+                font-size: rem(16);
+            }
         }
         // .header__contacts_city
         &_city {
@@ -81,12 +101,15 @@
             line-height: rem(17);
             letter-spacing: rem(0);
             text-align: left;
+                @media (max-width: 1024px) {
+                    font-size: rem(16);
+            }
         }
     }
     // .header__menu
     &__menu {
         display: flex;
-        width: rem(424);
+        width: rem(384);
         justify-content: space-between;
         // .header__menu_item
         &_item {}
@@ -99,6 +122,9 @@
             line-height: rem(17);
             letter-spacing: rem(0);
             text-align: left;
+                    @media (max-width: 1024px) {
+                        font-size: rem(16);
+            }
         }
     }
     // .header__btn
@@ -117,6 +143,10 @@
             line-height: rem(17);
             letter-spacing: rem(0);
             text-align: left;
+                @media (max-width: 1024px) {
+                    font-size: rem(16);
+                     padding: rem(12) rem(40);
+            }
         }
     }
 }

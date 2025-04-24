@@ -73,7 +73,7 @@ async function initMap() {
         document.getElementById('map'), {
             location: {
                 center: [60.597465, 56.838011], // Центр России
-                zoom: 5
+                zoom: window.innerWidth <= 1024 ? 3.5 : 5
             },
             mode: 'vector',
             behaviors: [] // полное отключение
@@ -172,16 +172,16 @@ async function initMap() {
             <button id="close-sidebar">Закрыть</button>
         `;
 
-        sidebar.style.right = '15px';
+        sidebar.style.right = '0px';
 
         document.getElementById('close-sidebar').addEventListener('click', () => {
-            sidebar.style.right = '-450px';
+            sidebar.style.right = '-4500px';
         });
     }
 
     // Закрытие меню при клике на карту
     map.container.addEventListener('click', () => {
-        sidebar.style.right = '-450px';
+        sidebar.style.right = '-4500px';
     });
 
     // Добавляем метки для каждого города

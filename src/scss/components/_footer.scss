@@ -1,11 +1,15 @@
 .footer {
     background: #00273B;
-    padding: 35px 0px 65px;
+    padding: rem(35) rem(0) rem(65);
     // .footer__row
     &__row {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media (max-width: 1024px) {
+					flex-direction: column;
+                    gap: rem(20);
+				}
         // .footer__row_logo
         &_logo {}
         // .footer__row_right
@@ -13,7 +17,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 50px;
+            gap: rem(50);
         }
         // .footer__row_btn
         &_btn {}
@@ -23,24 +27,26 @@
         // .footer__logo_item
         &_item {}
         // .footer__logo_img
-        &_img {}
+        &_img {
+             width: rem(232);
+        }
     }
     // .footer__menu
     &__menu {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 424px;
+        width: rem(424);
         // .footer__menu_item
         &_item {}
         // .footer__menu_link
         &_link {
             color: rgb(255, 255, 255);
             font-family: Rubik;
-            font-size: 18px;
+            font-size: rem(18);
             font-weight: 400;
-            line-height: 17px;
-            letter-spacing: 0px;
+            line-height: rem(17);
+            letter-spacing: rem(0);
             text-align: left;
         }
     }
@@ -49,24 +55,24 @@
         // .footer__btn_item
         &_item {
             display: inline-block;
-            padding: 12px 44px;
+            padding: rem(12) rem(44);
             color: rgb(255, 255, 255);
             font-family: Rubik;
-            font-size: 18px;
+            font-size: rem(18);
             font-weight: 400;
-            line-height: 17px;
-            letter-spacing: 0px;
+            line-height: rem(17);
+            letter-spacing: rem(0);
             text-align: left;
             box-sizing: border-box;
-            border: 1px solid rgb(9, 124, 187);
-            border-radius: 20px;
+            border: rem(1) solid rgb(9, 124, 187);
+            border-radius: rem(20);
         }
     }
 }
 
 .creator {
     background-color: black;
-    padding: 15px 0px;
+    padding: rem(15) rem(0);
 }
 
 .craeator {
@@ -74,10 +80,10 @@
     &__name {
         color: rgb(255, 255, 255);
         font-family: Rubik;
-        font-size: 14px;
+        font-size: rem(14);
         font-weight: 400;
-        line-height: 17px;
-        letter-spacing: 0px;
+        line-height: rem(17);
+        letter-spacing:rem(0);
         text-align: center;
     }
 }
