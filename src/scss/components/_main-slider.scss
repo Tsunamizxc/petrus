@@ -34,29 +34,29 @@
     position: relative;
     // .mainslider__header
     &__header {
-        padding-top: 284px;
-        padding-bottom: 439px;
+        padding-top: rem(284);
+        padding-bottom: rem(439);
         // .mainslider__header_title
         &_title {
-            max-width: 831px;
+            max-width: rem(831);
             color: rgb(0, 0, 0);
             font-family: Rubik;
-            font-size: 48px;
+            font-size: rem(48);
             font-weight: 400;
             line-height: 140%;
-            letter-spacing: 0px;
+            letter-spacing: rem(0);
             text-align: left;
-            margin-bottom: 20px;
+            margin-bottom: rem(20);
         }
         // .mainslider__header_description
         &_description {
-            max-width: 737px;
+            max-width: rem(737);
             color: rgb(0, 0, 0);
             font-family: Rubik;
-            font-size: 24px;
+            font-size: rem(24);
             font-weight: 300;
             line-height: 140%;
-            letter-spacing: 0px;
+            letter-spacing: rem(0);
             text-align: left;
         }
     }
@@ -69,34 +69,34 @@
 .swiper-pagination {
     display: flex;
     align-items: center;
-    gap: 20px;
-    bottom: 280px !important;
+    gap: rem(20);
+    bottom: rem(280) !important;
     width: unset !important;
 }
 
 .swiper-pagination-bullet {
-    width: 20px;
-    height: 20px;
+    width: rem(20);
+    height: rem(20);
     color: rgb(9, 124, 187);
     font-family: Rubik;
-    font-size: 24px;
+    font-size: rem(24);
     font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0px;
+    line-height: rem(28);
+    letter-spacing: rem(0);
     text-align: left;
     background: unset;
 }
 
 .swiper-pagination-bullet-active {
     color: #000000;
-    font-size: 36px;
+    font-size: rem(36);
 }
 
 .swiper-line {
-    width: 20px;
-    height: 3px;
+    width: rem(20);
+    height: rem(3);
     background-color: black;
-    margin-top: 2px;
+    margin-top: rem(2);
     &:last-child {
         display: none;
     }

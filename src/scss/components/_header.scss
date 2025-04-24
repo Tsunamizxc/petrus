@@ -20,10 +20,10 @@
     transition: 0.3s all ease;
     &.active {
         background-color: rgb(255, 255, 255);
-        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: rem(0) rem(2) rem(10) rem(0) rgba(0, 0, 0, 0.2);
     }
     &__row {
-        padding: 40px 0px;
+        padding: rem(40) rem(0);
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -31,20 +31,20 @@
         &_left {
             display: flex;
             align-items: center;
-            gap: 40px;
+            gap: rem(40);
         }
         // .header__row_logo
         &_logo {}
         // .header__row_contacts
         &_contacts {
             display: flex;
-            gap: 20px;
+            gap: rem(20);
         }
         // .header__row_right
         &_right {
             display: flex;
             align-items: center;
-            gap: 50px;
+            gap: rem(50);
         }
         // .header__row_menu
         &_menu {}
@@ -56,7 +56,9 @@
         // .header__logo_link
         &_link {}
         // .header__logo_img
-        &_img {}
+        &_img {
+            width: rem(232);
+        }
     }
     // .header__contacts
     &__contacts {
@@ -64,27 +66,27 @@
         &_phone {
             color: rgb(0, 0, 0);
             font-family: Rubik;
-            font-size: 18px;
+            font-size: rem(18);
             font-weight: 400;
-            line-height: 17px;
-            letter-spacing: 0px;
+            line-height: rem(17);
+            letter-spacing: rem(0);
             text-align: left;
         }
         // .header__contacts_city
         &_city {
             color: rgb(25, 178, 255);
             font-family: Rubik;
-            font-size: 18px;
+            font-size: rem(18);
             font-weight: 500;
-            line-height: 17px;
-            letter-spacing: 0px;
+            line-height: rem(17);
+            letter-spacing: rem(0);
             text-align: left;
         }
     }
     // .header__menu
     &__menu {
         display: flex;
-        width: 424px;
+        width: rem(424);
         justify-content: space-between;
         // .header__menu_item
         &_item {}
@@ -92,10 +94,10 @@
         &_link {
             color: rgb(0, 0, 0);
             font-family: Rubik;
-            font-size: 18px;
-            font-weight: 400;
-            line-height: 17px;
-            letter-spacing: 0px;
+            font-size: rem(18);
+            font-weight: 500;
+            line-height: rem(17);
+            letter-spacing: rem(0);
             text-align: left;
         }
     }
@@ -104,16 +106,16 @@
         // .header__btn_item
         &_item {
             display: inline-block;
-            padding: 12px 44px;
+            padding: rem(12) rem(44);
             box-sizing: border-box;
-            border: 1px solid rgb(9, 124, 187);
-            border-radius: 20px;
+            border: rem(1) solid rgb(9, 124, 187);
+            border-radius: rem(20);
             color: rgb(0, 0, 0);
             font-family: Rubik;
-            font-size: 18px;
+            font-size: rem(18);
             font-weight: 400;
-            line-height: 17px;
-            letter-spacing: 0px;
+            line-height: rem(17);
+            letter-spacing: rem(0);
             text-align: left;
         }
     }
