@@ -20,6 +20,10 @@
         font-size: rem(36);
         margin: rem(90) rem(0) rem(30) rem(0);
     }
+      @media (max-width: 530px) {
+        font-size: rem(24);
+        margin: rem(60) rem(0) rem(30) rem(0);
+    }
 }
 
 .map__img-top {
@@ -73,6 +77,11 @@
           right: rem(-350);
        padding: rem(65) rem(20) rem(0) rem(20);
     }
+    @media (max-width:530px) {
+          width: rem(250);
+          right: rem(-350);
+       padding: rem(65) rem(20) rem(0) rem(20);
+    }
 }
 
 #close-sidebar {
@@ -90,6 +99,9 @@
     text-align: center;
     cursor: pointer;
     margin-top: rem(20);
+     @media (max-width:530px) {
+    font-size: rem(16);
+    }
 }
 
 #map-sidebar h2 {
@@ -104,6 +116,9 @@
     @media (max-width: 1024px) {
        font-size: rem(24);
     }
+     @media (max-width:530px) {
+    font-size: rem(18);
+    }
 }
 
 #map-sidebar a {
@@ -117,6 +132,9 @@
     margin-top: rem(20);
     @media (max-width: 1024px) {
        font-size: rem(18);
+    }
+      @media (max-width:530px) {
+    font-size: rem(16);
     }
 }
 
@@ -133,6 +151,9 @@
         max-width: rem(250);
        font-size: rem(18);
        margin-top: rem(10);
+    }
+        @media (max-width:530px) {
+    font-size: rem(16);
     }
 }
 .img-sidebar{

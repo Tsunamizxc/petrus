@@ -48,6 +48,9 @@ img {
     @media (max-width: 1024px) {
          max-width: rem(800);
     }
+       @media (max-width: 530px) {
+       max-width: rem(290);
+    }
 }
 
 .site-container {

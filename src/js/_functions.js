@@ -5,7 +5,7 @@
 // import { isMobile, isTablet, isDesktop } from "./functions/check_client_width";
 
 // Реализация бургер-меню
-// import { burger } from './functions/burger';
+import { burger } from './functions/burger';
 
 // Реализация модального окна
 // import GraphModal from 'graph-modal';
@@ -33,6 +33,16 @@ const swiper = new Swiper('.mySwiper', {
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+    },
+});
+var swiperPress = new Swiper(".mySwiperPress", {
+    pagination: {
+        el: ".swiper-pagination",
+    },
+});
+var swiperPress = new Swiper(".mySwiperProd", {
+    pagination: {
+        el: ".swiper-pagination",
     },
 });
 //AOS
@@ -73,7 +83,7 @@ async function initMap() {
         document.getElementById('map'), {
             location: {
                 center: [60.597465, 56.838011], // Центр России
-                zoom: window.innerWidth <= 1024 ? 3.5 : 5
+                zoom: window.innerWidth <= 1024 ? 3 : 5
             },
             mode: 'vector',
             behaviors: [] // полное отключение
@@ -208,10 +218,22 @@ async function initMap() {
 window.addEventListener('scroll', function() {
     const header = document.querySelector(".header");
     const scrollPosition = window.scrollY || window.pageYOffset;
-
-    if (scrollPosition > 150) {
+    let height = window.innerWidth <= 1024 ? 10 : 120;
+    if (scrollPosition > height) {
         header.classList.add('active');
     } else {
         header.classList.remove('active');
+    }
+});
+
+
+window.addEventListener('scroll', function () {
+    const headerM = document.querySelector(".burger-menu");
+    const scrollPosition = window.scrollY || window.pageYOffset;
+    let height = window.innerWidth <= 1024 ? 10 : 120;
+    if (scrollPosition > height) {
+        headerM.classList.add('active');
+    } else {
+        headerM.classList.remove('active');
     }
 });

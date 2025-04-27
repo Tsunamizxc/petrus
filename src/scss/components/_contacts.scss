@@ -3,16 +3,22 @@ input {
 }
 .contacts {
     padding:rem(120) rem(0) rem(120) rem(0);
+	@media (max-width:530px) {
+					padding:rem(60) rem(0) rem(60) rem(0);
+				}
     h2{
-margin-bottom: rem(60);
-
+		margin-bottom: rem(30);
     }
-background: rgb(9, 124, 187);
+		background: rgb(9, 124, 187);
 		// .contacts__row
 
 		&__row {
-display: flex;
-justify-content: space-between;
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: 530px) {
+                flex-direction: column;
+				gap: rem(50);
+            }
 			// .contacts__row_content
 
 			&_content {
@@ -23,6 +29,9 @@ justify-content: space-between;
                 display: flex;
                 flex-direction: column;
                 gap: rem(20);
+				@media (max-width:530px) {
+					 gap: rem(10);
+				}
 			}
 
 			// .contacts__row_forms
@@ -51,6 +60,9 @@ justify-content: space-between;
 				@media (max-width: 1024px) {
 					font-size: rem(16);
 				}
+				@media (max-width: 530px) {
+					font-size: rem(14);
+				}
 			}
 
 			// .contacts__row_input
@@ -70,6 +82,9 @@ letter-spacing: rem(0);
 text-align: left;
 	@media (max-width: 1024px) {
 					max-width: rem(160);
+				}
+					@media (max-width: 530px) {
+					max-width: 90%;
 				}
 			}
 		}
@@ -91,7 +106,10 @@ text-align: left;
 	@media (max-width: 1024px) {
 					font-size: rem(36);
 				}
-
+@media (max-width:530px) {
+					 font-size: rem(18);
+					 line-height: rem(24);
+				}
 			}
 
 			// .contacts__content_city
@@ -101,11 +119,14 @@ text-align: left;
 font-family: Rubik;
 font-size: rem(36);
 font-weight: 400;
-line-height: rem(43);
 letter-spacing: rem(0);
 text-align: left;
 @media (max-width: 1024px) {
 					font-size: rem(24);
+				}
+				@media (max-width:530px) {
+					 font-size: rem(18);
+					
 				}
 			}
 
@@ -116,11 +137,13 @@ text-align: left;
 				font-family: Rubik;
 				font-size: rem(28);
 				font-weight: 300;
-				line-height:rem(33);
 				letter-spacing: rem(0);
 				text-align: left;
 				@media (max-width: 1024px) {
 					font-size: rem(18);
+				}
+				@media (max-width:530px) {
+					 font-size: rem(14);
 				}
 			}
 
@@ -131,11 +154,13 @@ text-align: left;
 font-family: Rubik;
 font-size: rem(28);
 font-weight: 300;
-line-height:rem(33);
 letter-spacing: rem(0);
 text-align: left;
 @media (max-width: 1024px) {
 					font-size: rem(18);
+				}
+				@media (max-width:530px) {
+					 font-size: rem(14);
 				}
 			}
 
@@ -146,11 +171,13 @@ text-align: left;
 				font-family: Rubik;
 				font-size: rem(28);
 				font-weight: 300;
-				line-height:rem(33);
 				letter-spacing: rem(0);
 				text-align: left;
 				@media (max-width: 1024px) {
 					font-size: rem(18);
+				}
+				@media (max-width:530px) {
+					 font-size: rem(14);
 				}
 			}
 
@@ -167,6 +194,9 @@ text-align: left;
 				@media (max-width: 1024px) {
 					font-size: rem(18);
 				}
+				@media (max-width:530px) {
+					 font-size: rem(14);
+				}
 			}
 		}
 
@@ -181,11 +211,13 @@ text-align: left;
 font-family: Rubik;
 font-size: rem(60);
 font-weight: 500;
-line-height: rem(71);
 letter-spacing: rem(0);
 text-align: left;
 @media (max-width: 1024px) {
 					font-size: rem(36);
+				}
+				@media (max-width: 530px) {
+					font-size: rem(18);
 				}
 			}
 
@@ -197,6 +229,9 @@ text-align: left;
                 gap: rem(40);
 					@media (max-width: 1024px) {
 					max-width: rem(400);
+				}
+				@media (max-width: 530px) {
+					gap: rem(20);
 				}
 			}
 		}
@@ -210,6 +245,11 @@ text-align: left;
 			&_row {
                 display: flex;
                 justify-content: space-between;
+
+					@media (max-width:530px) {
+					flex-direction: column;
+					gap: rem(10);
+				}
 			}
 
 			// .contacts__form_textarea
@@ -260,6 +300,9 @@ background: rgba(196, 196, 196, 0);
 	@media (max-width: 1024px) {
 					width: rem(400);
 				}
+					@media (max-width: 530px) {
+					width: 100%;
+				}
                  resize: none;
                  &:focus{
                     outline: none;
@@ -273,7 +316,7 @@ background: rgba(196, 196, 196, 0);
                 cursor: pointer;
 				font-family: Rubik;
 				font-size: rem(18);
-				font-weight: 700;
+				font-weight: 500;
 				line-height: 140%;
 				letter-spacing:rem(0);
 				text-align: left;
@@ -284,6 +327,10 @@ background: rgba(196, 196, 196, 0);
 				border:unset;
 				@media (max-width: 1024px) {
 					font-size: rem(16);
+				}
+				@media (max-width: 530px) {
+					font-size: rem(14);
+
 				}
 			}
 		}
