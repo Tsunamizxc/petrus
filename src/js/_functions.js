@@ -218,7 +218,7 @@ async function initMap() {
 window.addEventListener('scroll', function() {
     const header = document.querySelector(".header");
     const scrollPosition = window.scrollY || window.pageYOffset;
-    let height = window.innerWidth <= 1024 ? 10 : 120;
+    let height = window.innerWidth <= 1024 ? 10 : 20;
     if (scrollPosition > height) {
         header.classList.add('active');
     } else {
@@ -227,7 +227,7 @@ window.addEventListener('scroll', function() {
 });
 
 
-window.addEventListener('scroll', function () {
+window.addEventListener('scroll', function() {
     const headerM = document.querySelector(".burger-menu");
     const scrollPosition = window.scrollY || window.pageYOffset;
     let height = window.innerWidth <= 1024 ? 10 : 120;
