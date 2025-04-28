@@ -1,4 +1,9 @@
 .states {
+		  @media (max-width: 550px) {
+           & .press__row_item{
+	gap: rem(0);
+}
+            }
 
 		// .states__row
 
@@ -17,6 +22,9 @@
                 flex-wrap: wrap;
                 justify-content: space-between;
                 gap: rem(40);
+				  @media (max-width: 1024px) {
+               margin: rem(50) rem(0);
+            }
 			}
 		}
 
@@ -38,6 +46,9 @@ font-family: Rubik;
 font-size: rem(32);
 font-weight: 400;
 text-align: left;
+  @media (max-width: 1024px) {
+                font-size: rem(16);
+            }
 			}
 		}
 }
