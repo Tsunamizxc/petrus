@@ -120,10 +120,15 @@
             color: rgb(0, 0, 0);
             font-family: Rubik;
             font-size: rem(18);
-            font-weight: 500;
+            font-weight: 400;
             line-height: rem(17);
             letter-spacing: rem(0);
             text-align: left;
+            transition: 0.3s all ease;
+            &:hover{
+            color: rgba(0, 0, 0, 0.581);
+
+            }
             @media (max-width: 1024px) {
                 font-size: rem(16);
             }
@@ -145,6 +150,11 @@
             line-height: rem(17);
             letter-spacing: rem(0);
             text-align: left;
+            transition: 0.3s all ease;
+            &:hover{
+                background-color: rgb(9, 124, 187);
+                color:white;
+            }
             @media (max-width: 1024px) {
                 font-size: rem(16);
                 padding: rem(12) rem(40);
