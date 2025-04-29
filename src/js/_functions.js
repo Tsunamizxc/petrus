@@ -11,6 +11,12 @@ import { burger } from './functions/burger';
 // import GraphModal from 'graph-modal';
 // const modal = new GraphModal();
 
+//AOS
+import AOS from 'aos';
+// import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
+
 // Подключение свайпера
 import Swiper, { Navigation, Pagination, EffectFade } from 'swiper';
 Swiper.use([Navigation, Pagination, EffectFade]);
@@ -24,7 +30,7 @@ const swiper = new Swiper('.mySwiper', {
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
-        renderBullet: function(index, className) {
+        renderBullet: function (index, className) {
             return '<span class="' + className + '">' + (index + 1) + "</span><div class='swiper-line'></div>";
         },
     },
@@ -35,6 +41,7 @@ const swiper = new Swiper('.mySwiper', {
         prevEl: '.swiper-button-prev',
     },
 });
+
 var swiperPress = new Swiper(".mySwiperPress", {
     pagination: {
         el: ".swiper-pagination",
@@ -45,11 +52,6 @@ var swiperPress = new Swiper(".mySwiperProd", {
         el: ".swiper-pagination",
     },
 });
-//AOS
-import AOS from 'aos';
-// import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
-AOS.init();
 // Подключение плавной прокрутки к якорям
 // import SmoothScroll from 'smooth-scroll';
 // const scroll = new SmoothScroll('a[href*="#"]');
