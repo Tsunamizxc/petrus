@@ -54,13 +54,15 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
+    "@fancyapps/ui": "^5.0.36",
     "@popperjs/core": "^2.11.2",
     "aos": "^2.3.4",
     "choices.js": "^11.0.2",
-    "graph-modal": "^1.0.3",
+    "graph-modal": "^1.0.7",
     "graph-tabs": "^1.0.0",
     "inputmask": "^5.0.7",
     "just-validate": "^3.3.3",
+    "micromodal": "^0.6.1",
     "rellax": "^1.12.1",
     "simplebar": "^5.3.6",
     "smooth-scroll": "^16.1.3",
