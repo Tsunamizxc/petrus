@@ -1,0 +1,130 @@
+.form-container{
+    position: relative;
+    padding-bottom: rem(200);
+    padding-top: rem(60);
+}
+.form {
+    position: relative;
+    max-width:rem(586);
+    border-radius: rem(30);
+    padding: rem(55) rem(70);
+    box-shadow: rem(0) rem(4) rem(30) rem(0) rgba(0, 0, 0, 0.25);
+    background: rgb(254, 254, 254);
+    display: flex;
+    flex-direction: column;
+    gap: rem(15);
+    margin: 0 auto;
+    @media (max-width:530px) {
+    max-width:rem(280);
+            padding: rem(25) rem(30);
+    }
+		// .form__line
+
+		&__line {
+            display: flex;
+            flex-direction: column;
+            gap: rem(10);
+
+			// .form__line_label
+
+			&_label {
+                color: rgb(109, 132, 143);
+                font-family: Rubik;
+                font-size: rem(18);
+                font-weight: 300;
+                line-height: rem(21);
+                text-align: left;
+                  @media (max-width:530px) {
+                    font-size: rem(16);
+                }
+			}
+
+			// .form__line_input
+
+			&_input {
+                border-radius: rem(50);
+                color: #19B2FF;
+                font-family: Rubik;
+                font-size: rem(18);
+                font-weight: 300;
+                line-height: rem(21);
+                text-align: left;
+                box-shadow: rem(0) rem(2) rem(10) rem(0) rgba(0, 0, 0, 0.25);
+                background: rgba(25, 178, 255, 0.11);
+                padding: rem(15) rem(25);
+                transition: 0.3s all ease;
+                   @media (max-width:530px) {
+                    font-size: rem(16);
+                }
+                &:focus{
+                    background: rgba(255, 255, 255, 0.11);
+                    color: #000000;
+                }
+			}
+		}
+
+		// .form__buttons
+
+		&__buttons {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+               @media (max-width:530px) {
+                    flex-direction: column;
+                }
+			// .form__buttons_button
+
+			&_button {
+                &.reg{
+                padding: rem(13) rem(40);
+                @media (max-width:530px) {
+                      padding: rem(10) rem(40);
+                }
+                }
+                color: rgb(255, 255, 255);
+                border-radius: rem(50);
+                padding: rem(13) rem(70);
+
+                cursor: pointer;
+                border: unset;
+                background: rgb(25, 178, 255);
+                font-family: Rubik;
+                font-size: rem(18);
+                font-weight: 300;
+                line-height: rem(21);
+                text-align: left;
+                 @media (max-width:530px) {
+                    font-size: rem(14);
+                      padding: rem(10) rem(70);
+                }
+			}
+
+			// .form__buttons_text
+
+			&_text {
+                
+                font-family: Rubik;
+                font-size: rem(14);
+                font-weight: 300;
+                line-height: rem(17);
+                     @media (max-width:530px) {
+                    font-size: rem(12);
+                    margin-top: rem(10);
+                }
+			}
+
+			// .form__buttons_link
+
+			&_link {
+                margin-left: rem(5);
+                font-family: Rubik;
+                color: rgb(25, 178, 255);
+                font-size: rem(14);
+                font-weight: 300;
+                line-height: rem(17);
+                    @media (max-width:530px) {
+                    font-size: rem(12);
+                }
+			}
+		}
+}
