@@ -1,0 +1,156 @@
+.adminp {
+    margin: rem(100) rem(0) rem(200);
+    // .adminp__row
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 1600px) {
+            flex-direction: column;
+        }
+        // .adminp__row_article
+        &_article {}
+        // .adminp__row_contacts
+        &_contacts {}
+    }
+    // .adminp__article
+    &__article {
+        // .adminp__article_header
+        &_header {}
+        // .adminp__article_form
+        &_form {}
+    }
+    // .adminp__header
+    &__header {
+        // .adminp__header_title
+        &_title {
+            margin-bottom: rem(40);
+            color: rgb(0, 0, 0);
+            font-family: Rubik;
+            font-size: 60px;
+            font-weight: 500;
+            line-height: 71px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+    }
+    // .adminp__form
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: rem(20);
+        margin-bottom: rem(20);
+        &.contactsf {
+            padding-bottom: rem(20);
+            border-bottom: rem(1) solid rgba(128, 128, 128, 0.425);
+        }
+        // .adminp__form_line
+        &_line {
+            display: flex;
+            flex-direction: column;
+            gap: rem(10);
+        }
+        // .adminp__form_btns
+        &_btns {}
+    }
+    // .adminp__line
+    &__line {
+        // .adminp__line_label
+        &_label {
+            color: rgb(0, 0, 0);
+            font-family: Rubik;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 28px;
+            letter-spacing: 0px;
+        }
+        // .adminp__line_input
+        &_input {
+            border-radius: rem(50);
+            color: #19B2FF;
+            font-family: Rubik;
+            font-size: rem(18);
+            font-weight: 300;
+            line-height: rem(21);
+            text-align: left;
+            width: rem(400);
+            box-shadow: rem(0) rem(2) rem(10) rem(0) rgba(0, 0, 0, 0.25);
+            background: rgba(25, 178, 255, 0.11);
+            padding: rem(15) rem(25);
+            transition: 0.3s all ease;
+            @media (max-width: 530px) {
+                font-size: rem(16);
+            }
+            &:focus {
+                background: rgba(255, 255, 255, 0.11);
+                color: #000000;
+            }
+        }
+        &_textarea {
+            width: rem(800);
+            min-height: rem(350);
+            resize: none;
+            border-radius: rem(20);
+            border: unset;
+            color: #19B2FF;
+            font-family: Rubik;
+            font-size: rem(18);
+            font-weight: 300;
+            line-height: rem(21);
+            text-align: left;
+            @media (max-width: 1600px) {
+                width: 100%;
+            }
+            box-shadow: rem(0) rem(2) rem(10) rem(0) rgba(0, 0, 0, 0.25);
+            background: rgba(25, 178, 255, 0.11);
+            padding: rem(25) rem(25);
+            transition: 0.3s all ease;
+            &:focus {
+                outline: unset;
+                background: rgba(255, 255, 255, 0.11);
+                color: #000000;
+            }
+        }
+        // .adminp__line_text
+        &_text {
+            font-family: Rubik;
+            font-size: rem(18);
+            font-weight: 300;
+            line-height: rem(21);
+            text-align: left;
+        }
+    }
+    // .adminp__btns
+    &__btns {
+        // .adminp__btns_btn
+        &_btn {
+            color: rgb(255, 255, 255);
+            border-radius: rem(50);
+            &.red {
+                background-color: rgba(255, 4, 4, 0.726);
+            }
+            padding: rem(13) rem(70);
+            cursor: pointer;
+            border: unset;
+            background: rgb(25, 178, 255);
+            font-family: Rubik;
+            font-size: rem(18);
+            font-weight: 300;
+            line-height: rem(21);
+            text-align: left;
+            @media (max-width: 530px) {
+                font-size: rem(14);
+                padding: rem(10) rem(70);
+            }
+        }
+    }
+    // .adminp__contacts
+    &__contacts {
+        // .adminp__contacts_header
+        &_header {}
+        // .adminp__contacts_form
+        &_form {
+            padding: rem(50);
+            background-color: rgba(128, 128, 128, 0.11);
+        }
+    }
+}
